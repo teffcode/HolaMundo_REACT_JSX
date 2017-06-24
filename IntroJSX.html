@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<main id = "app"></main>
+
+	<!-- CREAR COMPONENTE --> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
+	<!-- USAR COMPONENTE -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
+	<!-- BABEL: COMPATIBILIDAD PARA QUE EL NAVEGADOR PASE DE JSX A JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.js"></script>
+
+	<script type="text/babel">
+		
+		function Hola(props){
+			const name = props.name;
+
+			return (
+			<h1 id = "Title">
+				Hola {name}
+			</h1>
+			);
+		}
+
+		ReactDOM.render(
+			<Hola name="Hola"/>,
+			document.getElementById('app')
+		);
+
+	</script>
+
+</body>
+</html>
